@@ -6,6 +6,7 @@ import Home from './Home';
 import Login from './Login'
 import Checkout from './Checkout';
 import Payment  from './Payment';
+import Orders from './Orders';
 import { BrowserRouter as Router ,Switch ,Route, BrowserRouter} 
 from "react-router-dom"
 import { useEffect, useState } from 'react';
@@ -55,6 +56,10 @@ function App() {
     <div className="app">
       
      <Switch>
+       <Route path="/orders">
+         <Header/>
+         <Orders />
+         </Route>
        <Route path="/login">
          <Login />
        </Route>
